@@ -1,0 +1,128 @@
+
+body {
+    font-family: "Honk", system-ui;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #1f2937;
+    color: #ffffff;
+}
+
+
+h2 {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #2563eb;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.player-info {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.player-info:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.player-info p {
+    font-size: 1.5em;
+    color: #333333;
+    margin: 10px 0;
+}
+
+.player-info b {
+    font-weight: bold;
+    color: #2563eb;
+}
+
+
+button {
+    padding: 15px 22px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #2563eb;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #1e40af;
+    transform: translateY(-3px);
+}
+
+
+form {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #2563eb;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #1e40af;
+    text-decoration: underline;
+}
+
+
+a.back-button {
+    text-decoration: none;
+    color: #374151;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    padding: 12px 18px;
+    background-color: #e5e7eb;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+a.back-button:hover {
+    background-color: #d1d5db;
+    color: #111827;
+}
+
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .player-info {
+        padding: 20px;
+    }
+
+    button, a.back-button {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,84 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #696969;
+}
+
+
+h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+.player-info {
+    background: beige;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.player-info p {
+    font-size: 1.3em;
+    color: #333;
+}
+
+
+button {
+    padding: 10px 10px;
+    margin: 0px
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e40af;
+    transform: translateY(-2px);
+}
+
+
+a {
+    text-decoration: none;
+    color: #1d4ed8;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    font-family: "Honk", system-ui;
+
+    text-decoration: underline;
+}
+
+.fav{
+padding-top: 2px;
+padding-left: 10em;
+}
+
+b{
+font-family: "Honk", system-ui;
+}
+h2 {
+font-family: "Honk", system-ui;
+}
+
+p{
+font-family: "Sriracha", cursive;
+}

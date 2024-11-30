@@ -1,0 +1,140 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: #2d3748;
+    color: #ffffff;
+    padding-top: 20px;
+}
+
+/* Page Title Styling */
+h2 {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #2563eb;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.player-info {
+    background: #1a202c;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.player-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+.player-info p {
+    font-size: 1.4em;
+    color: #cbd5e0;
+    margin: 15px 0;
+}
+
+.player-info b {
+    font-weight: bold;
+    color: #2563eb;
+}
+
+
+button {
+    padding: 14px 24px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #2563eb;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    font-family: "Sriracha", cursive;
+}
+
+button:hover {
+    background-color: #1e40af;
+    transform: translateY(-3px);
+}
+
+
+button.remove {
+    background-color: #e53e3e;
+}
+
+button.remove:hover {
+    background-color: #c53030;
+}
+
+
+a.back-button {
+    text-decoration: none;
+    color: #374151;
+    font-size: 1.2rem;
+    margin-top: 40px;
+    padding: 12px 18px;
+    background-color: #e5e7eb;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+a.back-button:hover {
+    background-color: #d1d5db;
+    color: #111827;
+}
+
+
+a {
+    text-decoration: none;
+    color: #2563eb;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    margin-top: 20px;
+}
+
+a:hover {
+    color: #1e40af;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .player-info {
+        padding: 20px;
+    }
+
+    button, a.back-button {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+
+    .player-info p {
+        font-size: 1.2em;
+    }
+}
+h2 {
+font-family: "Honk", system-ui;
+}
+
+p{
+font-family: "Sriracha", cursive;
+}

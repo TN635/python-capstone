@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Favorites</title>
+    <link href="/static/favorites.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Honk&family=Sriracha&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Your Favorite Players</h2>
+
+        {% if players %}
+            {% for player in players %}
+            <div class="player-info">
+                <p><b>Name:</b> {{ player.first_name }} {{ player.last_name }}</p>
+                <p><b>Team:</b> {{ player.team.full_name }}</p>
+                <p><b>Position:</b> {{ player.position }}</p>
+                <p><b>Height:</b> {{ player.height }}</p>
+
+
+                <form action="/remove-from-favorites" method="POST">
+                    <input type="hidden" name="player_id" value="{{ player.id }}">
+                    <button type="submit">Remove from Favorites</button>
+                </form>
+            </div>
+            <hr>
+            {% endfor %}
+        {% else %}
+            <p>No favorite players found. Add some players to your favorites!</p>
+        {% endif %}
+
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>

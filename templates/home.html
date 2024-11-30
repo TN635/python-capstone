@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Player Stats</title>
+    <link href="/static/home.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the NBA Player Stats</h1>
+        <p>Search up your favorite NBA player, compare their stats, and learn more!</p>
+
+        <form action='/player' method="GET">
+            <label for="player_name">Search for a player:</label><br>
+            <input type="text" id="player_name" name="player_name" placeholder="Enter player first or last name (not both!)" size="32">
+            <button type="submit">Search</button>
+        </form>
+
+        <div class="action-buttons">
+
+            <form action="/random-player" method="GET">
+                <button type="submit">Random Player</button>
+            </form>
+
+            <a href="/favorites">View Favorites</a>
+        </div>
+    </div>
+</body>
+</html>

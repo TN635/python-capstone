@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Season Stats</title>
+    <link href="/static/season_stats.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Honk&family=Sriracha&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Season Stats for {{ player.first_name }} {{ player.last_name }} (Season {{ season }})</h2>
+
+        <div class="player-info">
+            <p><b>Points per Game:</b> {{ stats.pts }}</p>
+            <p><b>Assists per Game:</b> {{ stats.ast }}</p>
+            <p><b>Rebounds per Game:</b> {{ stats.reb }}</p>
+            <p><b>Field Goal Percentage:</b> {{ (stats.fg_pct * 100)|round(1) }}%</p>
+            <p><b>Three-Point Percentage:</b> {{ (stats.fg3_pct * 100)|round(1) }}%</p>
+            <p><b>Free Throw Percentage:</b> {{ (stats.ft_pct * 100)|round(1) }}%</p>
+            <p><b>Games Played:</b> {{ stats.games_played }}</p>
+            <p><b>Minutes per Game:</b> {{ stats.min }}</p>
+        </div>
+
+        <hr>
+        <a href="/">Back to Home</a> | <a href="/favorites">View Favorites</a>
+    </div>
+</body>
+</html>
